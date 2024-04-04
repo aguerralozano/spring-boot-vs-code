@@ -20,6 +20,8 @@ public class ReqParamRestController {
         required = false, 
         defaultValue = "default message",
         name = "mensaje") String message) {
+
+        //http://localhost:8080/api/params/foo?mensaje=hola
         ParamDto paramDto = new ParamDto();
 
         paramDto.setMessage(message);
